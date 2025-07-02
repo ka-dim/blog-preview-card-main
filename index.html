@@ -44,6 +44,25 @@
         border-radius: 20px;
         box-shadow: 8px 8px;
         padding: 24px;
+        transition: 1s;
+      }
+
+      .card-component:hover {
+        box-shadow: 16px 16px;
+        cursor: pointer;
+        transition: 1s;
+      }
+
+      .card-component svg text {
+        transition: 1.5s;
+      }
+
+      .card-component:hover svg text {
+        fill: var(--color-primary);
+        stroke: black;
+        paint-order: stroke;
+        stroke-width: 3;
+        transition: 1s;
       }
 
       .card-block-image {
