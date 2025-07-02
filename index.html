@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -41,15 +40,15 @@
         width: min-content;
         margin: auto;
         background: var(--color-secondary);
-        border: solid 1px black;
+        border: solid 1px var(--color-quaternary);
         border-radius: 20px;
         box-shadow: 8px 8px;
-        padding: 20px;
+        padding: 24px;
       }
 
       .card-block-image {
         height: 200px;
-        margin-bottom: 16px;
+        margin-bottom: 24px;
       }
 
       .card-block-image img {
@@ -63,27 +62,29 @@
       }
 
       .status {
-        margin-bottom: 10px;
-        padding: 5px 10px;
+        margin-bottom: 12px;
+        padding: 4px 12px;
         width: min-content;
-        border-radius: 5px;
+        border-radius: 4px;
         background: var(--color-primary);
-        font-weight: 800;
+        color: var(--color-quaternary);
+        font-weight: 700;
       }
 
       .published {
         font-size: 14px;
         color: var(--color-quaternary);
-        font-weight: 500;
+        font-weight: medium;
       }
 
-      .card-block-text h2 {
-        margin: 16px 0;
+      .card-block-text svg {
+        margin: 12px 0;
       }
 
       .card-block-text p {
-        margin: 0 0 20px 0;
+        margin: 0 0 24px 0;
         color: var(--color-tertiary);
+        line-height: 1.5;
       }
 
       .card-block-footer {
@@ -95,12 +96,12 @@
       }
 
       .card-block-footer img {
-        width: 30px;
+        width: 32px;
         margin-right: 10px;
       }
 
       .card-block-footer span {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: bold;
       }
 
@@ -124,7 +125,22 @@
       <div class="card-block-text">
         <span class="status">Learning</span>
         <span class="published">Published 21 dec 2023</span>
-        <h2 role="heading" class="title">HTML & CSS foundations</h2>
+        <!-- <h2 role="heading" class="title">HTML & CSS foundations</h2> -->
+        <svg height="36" width="" xmlns="http://www.w3.org/2000/svg">
+          <text
+            x="0"
+            y="75%"
+            font-family="Figtree"
+            font-size="24"
+            font-weight="bold"
+            paint-order="fill stroke"
+            stroke="black"
+            stroke-width="2"
+            stroke-linejoin="square"
+          >
+            HTML & CSS foundations
+          </text>
+        </svg>
         <p>
           These languages are the backbone of every website, defining structure,
           content, and presentation.
