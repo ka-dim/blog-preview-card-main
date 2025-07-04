@@ -25,13 +25,19 @@
         --color-tertiary: hsl(0, 0%, 42%);
         --color-quaternary: hsl(0, 0%, 7%);
       }
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-      body {
-        background: var(--color-primary);
+      main {
         height: 100vh;
+        width: 100vw;
         display: grid;
         grid-template-rows: 1fr auto;
+        background: var(--color-primary);
         font-family: "Figtree";
+        border: solid rebeccapurple;
       }
 
       .card-component {
@@ -101,6 +107,9 @@
       .card-block-text svg {
         margin: 12px 0;
       }
+      .card-block-text h1 {
+        font-size: 0;
+      }
 
       .card-block-text p {
         margin: 0 0 24px 0;
@@ -136,47 +145,51 @@
     </style>
   </head>
   <body>
-    <div role="figure" class="card-component">
-      <div class="card-block-image">
-        <img
-          src="./assets/images/illustration-article.svg"
-          alt="illustration article"
-        />
+    <main>
+      <div class="card-component">
+        <div class="card-block-image">
+          <img
+            src="./assets/images/illustration-article.svg"
+            alt="illustration article"
+          />
+        </div>
+        <div class="card-block-text">
+          <span class="status">Learning</span>
+          <span class="published">Published 21 dec 2023</span>
+          <h1>
+            <svg height="36" width="" xmlns="http://www.w3.org/2000/svg">
+              <text
+                x="0"
+                y="75%"
+                font-family="Figtree"
+                font-size="24"
+                font-weight="bold"
+                paint-order="fill stroke"
+                stroke="black"
+                stroke-width="0.5"
+              >
+                HTML & CSS foundations
+              </text>
+            </svg>
+          </h1>
+          <p>
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
+        <div class="card-block-footer">
+          <img src="./assets/images/image-avatar.webp" alt="avatar" />
+          <span class="text-image-avatar">Greg Hooper</span>
+        </div>
       </div>
-      <div class="card-block-text">
-        <span class="status">Learning</span>
-        <span class="published">Published 21 dec 2023</span>
-        <!-- <h2 role="heading" class="title">HTML & CSS foundations</h2> -->
-        <svg height="36" width="" xmlns="http://www.w3.org/2000/svg">
-          <text
-            x="0"
-            y="75%"
-            font-family="Figtree"
-            font-size="24"
-            font-weight="bold"
-            paint-order="fill stroke"
-            stroke="black"
-            stroke-width="1"
-          >
-            HTML & CSS foundations
-          </text>
-        </svg>
-        <p>
-          These languages are the backbone of every website, defining structure,
-          content, and presentation.
-        </p>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/ka-dim" target="_blank">Dimitri Kammegne</a
+        >.
       </div>
-      <div class="card-block-footer">
-        <img src="./assets/images/image-avatar.webp" alt="avatar" />
-        <span class="text-image-avatar">Greg Hooper</span>
-      </div>
-    </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://github.com/ka-dim" target="_blank">Dimitri Kammegne</a>.
-    </div>
+    </main>
   </body>
 </html>
